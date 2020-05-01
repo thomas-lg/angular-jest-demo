@@ -1,18 +1,15 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { CounterComponent } from './counter.component';
-import { RouterTestingModule } from '@angular/router/testing';
 import { Component, Input } from '@angular/core';
-import { PlusComponent } from 'src/app/components/plus/plus.component';
-import { MinusComponent } from 'src/app/components/minus/minus.component';
-import { EvenOddComponent } from 'src/app/components/even-odd/even-odd.component';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { DisplayComponent } from 'src/app/components/display/display.component';
+import { MinusComponent } from 'src/app/components/minus/minus.component';
+import { PlusComponent } from 'src/app/components/plus/plus.component';
+import { CounterComponent } from './counter.component';
 
 @Component({
-	selector: 'app-minus',
+	selector: 'app-even-odd',
 	template: '',
 })
-class PlusStubComponent {
+class EvenOddStubComponent {
 	@Input() counter: number;
 }
 
@@ -27,7 +24,7 @@ describe('CounterComponent', () => {
 				PlusComponent,
 				MinusComponent,
 				DisplayComponent,
-				EvenOddComponent,
+				EvenOddStubComponent,
 			],
 		}).compileComponents();
 	}));

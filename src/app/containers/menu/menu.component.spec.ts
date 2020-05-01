@@ -5,6 +5,7 @@ import { MenuComponent } from './menu.component';
 describe('MenuComponent', () => {
 	let component: MenuComponent;
 	let fixture: ComponentFixture<MenuComponent>;
+	let aEl: Element;
 
 	beforeEach(async(() => {
 		TestBed.configureTestingModule({
@@ -18,7 +19,10 @@ describe('MenuComponent', () => {
 		fixture.detectChanges();
 	});
 
-	it('should create', () => {
-		expect(component).toBeTruthy();
+	it('should have 2 elem inthe menu', () => {
+		const items: NodeList = fixture.nativeElement.querySelectorAll(
+			'a[routerLink]'
+		);
+		expect(items.length).toBe(2);
 	});
 });

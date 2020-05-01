@@ -1,10 +1,4 @@
-import {
-	Component,
-	OnInit,
-	Input,
-	OnChanges,
-	SimpleChanges,
-} from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
 	selector: 'app-even-odd',
