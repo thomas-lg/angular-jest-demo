@@ -1,12 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
 	selector: 'app-minus',
 	templateUrl: './minus.component.html',
 	styleUrls: ['./minus.component.scss'],
 })
-export class MinusComponent implements OnInit {
-	constructor() {}
+export class MinusComponent {
+	@Input() counter: number;
+	@Output() minus = new EventEmitter();
 
-	ngOnInit(): void {}
+	canSub = () => this.counter > 0;
+
+	sub = () => {
+		if (this.canSub()) this.minus.emit();
+	};
 }

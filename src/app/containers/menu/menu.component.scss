@@ -1,0 +1,17 @@
+.items {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	.item {
+		border: 2px solid whitesmoke;
+		padding: 20px;
+		a {
+			font-style: normal;
+			color: whitesmoke;
+		}
+	}
+}
+.line {
+	margin: 20px;
+	border: 4px solid whitesmoke;
+}

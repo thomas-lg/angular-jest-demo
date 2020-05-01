@@ -1,1 +1,11 @@
-<p>counter works!</p>
+<div class="title">
+	Counter
+</div>
+<div class="container">
+	<app-minus class="item" [counter]=counter (minus)="sub()"></app-minus>
+	<app-display class="item" [counter]=counter> </app-display>
+	<app-plus class="item" [counter]=counter (plus)="add()"></app-plus>
+</div>
+<div class="more">
+	<app-even-odd [counter]=counter></app-even-odd>
+</div>
