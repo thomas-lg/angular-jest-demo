@@ -10,6 +10,7 @@ import { DisplayComponent } from './components/display/display.component';
 import { EvenOddComponent } from './components/even-odd/even-odd.component';
 import { OtherComponent } from './containers/other/other.component';
 import { CounterComponent } from './containers/counter/counter.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
 	declarations: [
@@ -22,7 +23,7 @@ import { CounterComponent } from './containers/counter/counter.component';
 		OtherComponent,
 		CounterComponent,
 	],
-	imports: [BrowserModule, AppRoutingModule],
+	imports: [BrowserModule, AppRoutingModule, HttpClientModule],
 	providers: [],
 	bootstrap: [AppComponent],
 })
