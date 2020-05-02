@@ -23,6 +23,7 @@ describe('EvenOddComponent', () => {
 		labelEl = fixture.nativeElement.querySelector('.label');
 		fixture.detectChanges();
 	}));
+
 	describe('should display odd when', () => {
 		it('counter is equal to 3', () => {
 			testHost.counter = 3;
@@ -35,6 +36,7 @@ describe('EvenOddComponent', () => {
 			expect(labelEl.textContent).toEqual('odd');
 		});
 	});
+
 	describe('should display even when', () => {
 		it('counter is equal to 2', () => {
 			testHost.counter = 2;
@@ -42,6 +44,7 @@ describe('EvenOddComponent', () => {
 			expect(labelEl.textContent).toEqual('even');
 		});
 	});
+
 	describe('should display max when', () => {
 		it('counter is equal to 10', () => {
 			testHost.counter = 10;
@@ -49,6 +52,7 @@ describe('EvenOddComponent', () => {
 			expect(labelEl.textContent).toEqual('max');
 		});
 	});
+
 	describe('should display min when', () => {
 		it('counter is equal to 0', () => {
 			testHost.counter = 0;

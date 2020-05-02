@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FakeService } from 'src/app/services/fake/fake.service';
 
 @Component({
-	selector: 'app-other',
-	templateUrl: './other.component.html',
-	styleUrls: ['./other.component.scss'],
+	selector: 'app-async',
+	templateUrl: './async.component.html',
+	styleUrls: ['./async.component.scss'],
 })
-export class OtherComponent implements OnInit {
+export class AsyncComponent implements OnInit {
 	label: string;
 
 	constructor(private fakeService: FakeService) {}

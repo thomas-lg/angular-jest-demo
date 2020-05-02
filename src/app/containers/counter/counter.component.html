@@ -2,10 +2,12 @@
 	Counter
 </div>
 <div class="container">
-	<app-minus class="item" [counter]=counter (minus)="sub()"></app-minus>
-	<app-display class="item" [counter]=counter> </app-display>
-	<app-plus class="item" [counter]=counter (plus)="add()"></app-plus>
+	<app-button class="item" [counter]="counter" [value]="1" (change)="modify($event)"></app-button>
+	<app-button class="item" [counter]="counter" [value]="5" (change)="modify($event)"></app-button>
+	<app-display class="item" [counter]="counter"> </app-display>
+	<app-button class="item" [counter]="counter" [value]="-5" (change)="modify($event)"></app-button>
+	<app-button class="item" [counter]="counter" [value]="-1" (change)="modify($event)"></app-button>
 </div>
 <div class="more">
-	<app-even-odd [counter]=counter></app-even-odd>
+	<app-even-odd [counter]="counter"></app-even-odd>
 </div>

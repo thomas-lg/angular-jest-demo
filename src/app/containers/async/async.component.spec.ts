@@ -1,23 +1,23 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OtherComponent } from './other.component';
-import { FakeService } from './../../services/fake/fake.service';
+import { AsyncComponent } from './async.component';
+import { FakeService } from 'src/app/services/fake/fake.service';
 import { of } from 'rxjs';
 
-describe('OtherComponent', () => {
-	let component: OtherComponent;
-	let fixture: ComponentFixture<OtherComponent>;
+describe('AsyncComponent', () => {
+	let component: AsyncComponent;
+	let fixture: ComponentFixture<AsyncComponent>;
 	let fakeService: FakeService;
 
 	beforeEach(async(() => {
 		TestBed.configureTestingModule({
-			declarations: [OtherComponent],
+			declarations: [AsyncComponent],
 			providers: [FakeService],
 		});
 	}));
 
 	beforeEach(() => {
-		fixture = TestBed.createComponent(OtherComponent);
+		fixture = TestBed.createComponent(AsyncComponent);
 		component = fixture.componentInstance;
 		fakeService = TestBed.get(FakeService);
 		spyOn(fakeService, 'fake').and.returnValue(of('Hello Test'));

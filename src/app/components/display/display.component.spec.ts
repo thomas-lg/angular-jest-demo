@@ -3,7 +3,7 @@ import { DisplayComponent } from './display.component';
 import { Component } from '@angular/core';
 
 @Component({
-	template: `<app-display [counter]="counter"></app-display> `,
+	template: `<app-display [counter]="counter"></app-display>`,
 })
 class TestHostComponent {
 	counter: number;

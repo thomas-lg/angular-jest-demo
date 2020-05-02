@@ -3,7 +3,10 @@
 	flex: 1;
 	cursor: pointer;
 	border: 2px solid white;
-	padding: 20px;
+	padding: 40px;
 	margin: 20px;
 	justify-content: center;
+	.value {
+		margin-left: 5px;
+	}
 }

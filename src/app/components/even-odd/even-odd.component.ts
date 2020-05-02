@@ -11,12 +11,6 @@ export class EvenOddComponent implements OnChanges {
 
 	ngOnChanges(changes: SimpleChanges): void {
 		this.type =
-			this.counter === 0
-				? 'min'
-				: this.counter === 10
-				? 'max'
-				: this.counter % 2
-				? 'odd'
-				: 'even';
+			this.counter === 0 ? 'min' : this.counter === 10 ? 'max' : this.counter % 2 ? 'odd' : 'even';
 	}
 }

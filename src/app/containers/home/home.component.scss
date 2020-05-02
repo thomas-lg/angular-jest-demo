@@ -1,0 +1,47 @@
+.content {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	.images {
+		display: flex;
+		flex-direction: row;
+		flex: 1;
+		justify-content: space-between;
+		.jest {
+			display: flex;
+			flex: 1;
+			justify-content: center;
+			img {
+				width: 300px;
+			}
+		}
+		.vs {
+			display: flex;
+			flex: 0.8;
+			justify-content: center;
+			font-size: 128px;
+		}
+		.karma-jasmine {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-content: center;
+			flex: 1;
+			.karma {
+				width: 500px;
+			}
+			.jasmine {
+				width: 500px;
+			}
+		}
+	}
+	.author {
+		display: flex;
+		justify-content: center;
+		margin-top: 40px;
+	}
+	.angular {
+		display: flex;
+		justify-content: center;
+	}
+}

@@ -1,5 +1,4 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { MenuComponent } from './menu.component';
 
 describe('MenuComponent', () => {
@@ -19,10 +18,8 @@ describe('MenuComponent', () => {
 		fixture.detectChanges();
 	});
 
-	it('should have 2 elem inthe menu', () => {
-		const items: NodeList = fixture.nativeElement.querySelectorAll(
-			'a[routerLink]'
-		);
-		expect(items.length).toBe(2);
+	it('should have 3 elem inthe menu', () => {
+		const items: NodeList = fixture.nativeElement.querySelectorAll('a[routerLink]');
+		expect(items.length).toBe(3);
 	});
 });

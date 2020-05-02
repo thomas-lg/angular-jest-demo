@@ -1,5 +1,5 @@
 {
-	"name": "counter",
+	"name": "angular-jest-demo",
 	"version": "0.0.0",
 	"scripts": {
 		"ng": "ng",
@@ -47,6 +47,11 @@
 		"preset": "jest-preset-angular",
 		"setupFilesAfterEnv": [
 			"<rootDir>/src/setupJest.ts"
+		],
+		"coveragePathIgnorePatterns": [
+			"node_modules",
+			"jestGlobalMocks.ts",
+			"coverage"
 		]
 	}
 }
